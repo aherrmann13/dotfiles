@@ -9,6 +9,10 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+#my changes
+exec --no-startup-id feh --bg-scale '/home/adam/wallpaper/background.jpg'
+new_window 1pixel
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
