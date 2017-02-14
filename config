@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 #my changes
-exec --no-startup-id feh --bg-scale '/home/adam/wallpaper/background.jpg'
+exec ~/.fehbg
 new_window 1pixel
 
 set $mod Mod4
