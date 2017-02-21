@@ -158,4 +158,8 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
         tray_output primary
+	colors {
+		statusline #424242
+		background #191919
+	}
 }
