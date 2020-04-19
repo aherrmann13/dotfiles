@@ -6,7 +6,7 @@ then
     mv ~/.config/i3/config ~/.bkp/i3/i3
     rm -r ~/.config/i3
 fi
-if [ -e ~/.config/i3status/config ]
+if [ -e ~/config/i3status/config ]
 then 
     mkdir -p ~/.bkp/i3/i3status
     mv ~/.config/i3status/config ~/.bkp/i3/i3status/
