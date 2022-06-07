@@ -1,5 +1,12 @@
-#i3 install
+#! /bin/bash
+
+# i3 install
 echo "i3 install"
+sudo apt install i3 xorg
+
+
+# i3 config
+echo "i3 config"
 if [ -e ~/.config/i3/config ]
 then
     mkdir -p ~/.bkp/i3/i3/
