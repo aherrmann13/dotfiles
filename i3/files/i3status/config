@@ -17,6 +17,7 @@ order += "run_watch DHCP"
 order += "path_exists VPN"
 order += "wireless _first_"
 order += "ethernet _first_"
+order += "volume speaker"
 order += "battery 0"
 order += "cpu_usage"
 order += "tztime local"
@@ -55,4 +56,10 @@ cpu_usage {
 
 disk "/" {
         format = "%avail"
+}
+
+volume speaker {
+   format = "Speaker: %volume"
+   format_muted = "Speaker: m"
+   mixer = "Speaker"
 }
