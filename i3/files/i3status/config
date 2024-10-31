@@ -66,7 +66,7 @@ volume speaker {
 }
 
 read_file brightness {
-  format = "Brightness: %content / 930"
+  format = "Brightness: %content / 937"
   path = "/sys/class/backlight/intel_backlight/brightness"
 }
 
