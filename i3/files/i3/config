@@ -172,3 +172,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
 
+# Backlight
+# https://www.reddit.com/r/i3wm/comments/jk3y5m/i3_brightness_keys_not_working/
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl --min-val=2 -q set 3%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -q set 3%+
