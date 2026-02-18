@@ -1,4 +1,24 @@
+[env]
+TERM = "xterm-256color"
+live_config_reload = "true"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 1
+
+[window.padding]
+x = 25
+y = 20
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "IBM Plex Mono"
+style = "Regular"
+
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/sonokai.toml"
+    "~/.config/alacritty/themes/themes/github_dark.toml"
 ]
