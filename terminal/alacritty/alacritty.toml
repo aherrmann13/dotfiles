@@ -12,7 +12,7 @@ x = 25
 y = 20
 
 [font]
-size = 14.0
+size = 11.0
 
 [font.normal]
 family = "IBM Plex Mono"
@@ -20,5 +20,5 @@ style = "Regular"
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/github_dark.toml"
+    "~/.config/alacritty/themes/themes/oxocarbon.toml"
 ]
