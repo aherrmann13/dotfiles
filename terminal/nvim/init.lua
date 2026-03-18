@@ -28,14 +28,32 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     {
-        "nyoom-engineering/oxocarbon.nvim",
+        "EdenEast/nightfox.nvim",
         config = function () 
             vim.o.background = "dark"
-            vim.cmd.colorscheme("oxocarbon")
+            vim.cmd.colorscheme("carbonfox")
             
             vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
             vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
         end,
+    },
+    {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "MunifTanjim/nui.nvim",
+            "nvim-tree/nvim-web-devicons",
+        },
+        lazy = false,
+        opts = {
+            filesystem = {
+                filtered_items = {
+                    visible = true,
+                    hide_dotfiles = false,
+                    hide_gitignored = false,
+                }
+            }
+        }
     }
-
 })
