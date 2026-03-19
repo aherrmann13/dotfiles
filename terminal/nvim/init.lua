@@ -35,6 +35,9 @@ require("lazy").setup({
             
             vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
             vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+            
+            vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "none" })
+            vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "none" })
         end,
     },
     {
@@ -56,4 +59,10 @@ require("lazy").setup({
             }
         }
     }
+})
+
+vim.api.nvim_create_autocmd("QuitPre", {
+    callback = function()
+        vim.cmd("Neotree close")
+    end,
 })
