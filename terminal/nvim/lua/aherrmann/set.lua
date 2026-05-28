@@ -17,4 +17,6 @@ vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 vim.opt.swapfile = false
+
+vim.opt.signcolumn = "yes"
 -- may need: updatetime, signcolumn

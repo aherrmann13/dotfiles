@@ -24,3 +24,8 @@ vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>")
 vim.keymap.set("n", "<leader>b", neotree_toggle_focus)
 vim.keymap.set("n", "<leader>o", "<cmd>Neotree reveal<CR>")
 vim.keymap.set("n", "<leader>r", ":%s/")
+ 
+
+vim.keymap.set("n", "<Leader>ds", vim.diagnostic.open_float, { desc = "Show diagnostic" })
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
+
