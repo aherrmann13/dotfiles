@@ -18,7 +18,6 @@ return {
       },
     })
     vim.opt.completeopt = { "menu", "menuone", "popup", "noinsert", "fuzzy" }
-    vim.opt.completeopt = { "menu", "menuone", "popup" }
 
     vim.api.nvim_create_autocmd("LspAttach", {
       callback = function(ev)
@@ -31,6 +30,11 @@ return {
         end
       end,
     })
+    vim.keymap.set("n", "<Leader>ds", vim.diagnostic.open_float, { desc = "Show diagnostic" })
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
+    defaults = {
+      layout_strategy = "flex",
+    },
     vim.diagnostic.config({
       --      virtual_text = true,  -- show inline messages
       signs = true,         -- show signs in the gutter
